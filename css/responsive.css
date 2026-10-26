@@ -1,0 +1,32 @@
+/* Leena's Cakes & Desserts - RESPONSIVE STYLES
+   Adjustments for tablet, laptop and desktop screens (phone is the default in style.css).
+   Must load AFTER style.css. */
+
+@media (min-width: 400px) { .nav-cta { display: inline-flex; } }
+@media (max-width: 359px) { .brand-sub { display: none; } .brand-logo { width: 42px; height: 42px; } }
+@media (min-width: 980px) {
+  .nav-links { display: flex; }
+  .burger { display: none; }
+  .mobile-nav { display: none !important; }
+}
+@media (min-width: 900px) {
+  .hero-grid { grid-template-columns: 1.1fr .9fr; }
+  .hero-visual { margin-inline: 0 0; justify-self: end; }
+}
+@media (min-width: 900px) { .about-grid { grid-template-columns: 1.05fr .95fr; } }
+@media (min-width: 760px) {
+  .featured-list { display: grid; grid-template-columns: repeat(4, 1fr); overflow: visible; margin-inline: 0; padding: 0; gap: 20px; }
+  .f-card { flex: initial; max-width: none; }
+}
+@media (min-width: 760px) and (max-width: 979px) { .featured-list { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .menu-filter { justify-content: center; position: static; margin: 0 0 2.5rem; background: transparent; border: 0; padding: 0; -webkit-backdrop-filter: none; backdrop-filter: none; flex-wrap: wrap; overflow: visible; } }
+@media (min-width: 420px) { .lbl-long { display: inline; } .lbl-short { display: none; } .p-body .btn { font-size: .88rem; } }
+@media (min-width: 720px) { .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; row-gap: 26px; } .p-body .btn { font-size: .95rem; } }
+@media (min-width: 1100px) { .product-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (hover: none) { .g-cap { opacity: 1; transform: none; font-size: .8rem; } }
+@media (min-width: 800px) { .gallery-grid { columns: 3; column-gap: 20px; } .gallery-grid li { margin-bottom: 20px; } }
+@media (min-width: 700px) { .lightbox[open] { padding: 3.5rem 2rem 1.5rem; gap: 1.2rem; } }
+@media (min-width: 760px) { .video-grid { grid-template-columns: repeat(3, 1fr); max-width: none; gap: 24px; } }
+@media (min-width: 800px) { .review-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 900px) { .contact-grid { grid-template-columns: 1fr 1fr; } .map-card { min-height: 460px; } }
+@media (min-width: 800px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
